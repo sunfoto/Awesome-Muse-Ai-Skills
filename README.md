@@ -43,9 +43,7 @@ Skills and linked projects are organised by category in [docs/CATEGORIES.md](doc
 
 Other Muse skill projects from the community (listed, not vendored — check each project's own license and review status before installing):
 
-| Project | Notes |
-| --- | --- |
-| [wahyunuriman999/Muse-Skill-Hub](https://github.com/wahyunuriman999/Muse-Skill-Hub) | 97 skills as typed, permission-enforced tools, plus universal `SKILL.md` definitions. |
+_The list is being curated — the first entries are on the way._
 
 Know a project that belongs here? Open a PR or use the "Suggest a skill" issue template.
 
