@@ -44,3 +44,7 @@ Keep `SKILL.md` lean. Move bulk reference material into `references/` and tell M
 ## Installing a skill in Muse
 
 Copy the skill folder into your Muse custom skills directory (`~/workspace/custom-skills/`) and start a new conversation. Muse indexes skills by name and description.
+
+## Architecture decision — one skill per folder (2026-10-28)
+
+Skills are **never bundled into one mega-skill**. Each skill is its own folder with its own `SKILL.md`, because Muse matches a user request against each skill's short name and description: a bundle dilutes matching, bloats context with unrelated procedures, and makes per-skill review, testing, and selective install impossible. Tightly-coupled steps of one workflow travel as a pack of separate skills (or one skill plus `references/`), never as one giant `SKILL.md`.
