@@ -15,12 +15,12 @@ Thanks for helping build the Muse skills commons. This repo accepts:
 
 ## Add a skill
 
-1. Copy `templates/skill-template/` to `skills/<your-skill-name>/`.
-   - Folder name: lowercase, hyphens, no spaces — it becomes the skill name.
+1. Choose the skill's category from [docs/CATEGORIES.md](docs/CATEGORIES.md) first, then copy `templates/skill-template/` to `skills/<category-slug>/<your-skill-name>/`.
+   - Folder name: lowercase, hyphens, no spaces — it becomes the skill name. The category folder comes from the registry; a skill that fits no existing category needs a new category approved by the repo owner (see the classification rule in [docs/CATEGORIES.md](docs/CATEGORIES.md)).
 2. Fill in `SKILL.md`: frontmatter `name` and a precise `description` (this is what Muse matches tasks against), then clear steps, guardrails, and examples.
 3. Put long reference material in `references/` and helper scripts in `scripts/` inside your skill folder. Keep `SKILL.md` itself focused.
 4. Test the skill on Muse with at least two realistic requests and note what you tested in the PR description.
-5. Add a row for your skill to the table in `README.md` (and to [docs/CATEGORIES.md](docs/CATEGORIES.md) under its category).
+5. Add a row for your skill to the table in `README.md` under its category heading (and to [docs/CATEGORIES.md](docs/CATEGORIES.md) under the same category).
 
 ## Rules
 

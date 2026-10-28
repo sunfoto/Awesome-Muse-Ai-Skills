@@ -14,32 +14,40 @@ See [docs/SKILL_FORMAT.md](docs/SKILL_FORMAT.md) for the format, and [templates/
 
 ## Install a skill
 
-1. Pick a skill from the [skills/](skills/) directory.
+1. Pick a skill from the [skills/](skills/) directory — skills are grouped there by domain (category) folder.
 2. Copy its whole folder into your Muse custom skills directory (`~/workspace/custom-skills/`).
 3. Start a new conversation — Muse will find the skill by its name and description.
 
 ## Skills in this repo
 
+Every skill lives under its domain folder: `skills/<category-slug>/<skill-name>/`. The authoritative category registry — slugs, scope, members, and the classification rule every new or updated skill must follow — is [docs/CATEGORIES.md](docs/CATEGORIES.md).
+
+_Format example (unclassified):_ [example-hello-muse](skills/example-hello-muse/SKILL.md) — a minimal working example that stays at the top level of `skills/` to demonstrate the format; use it to verify your install and as a pattern for your own skill. It is a format demo, not a classified skill.
+
+### Content & media
+
 | Skill | What it does |
 | --- | --- |
-| [example-hello-muse](skills/example-hello-muse/SKILL.md) | Minimal working example — use it to verify your install and as a pattern for your own skill. |
-| [srt-unverified-marker-gate](skills/srt-unverified-marker-gate/SKILL.md) | Gate a delivered video's SRT subtitle file before QA handover or posting: scan the full text for unverified-claim markers, resolve each one against a real source, and block delivery while any marker remains. |
-| [pre-edit-workflow-g0-g7](skills/pre-edit-workflow-g0-g7/SKILL.md) | Run a gated pre-edit workflow (gates G0–G7) for narrated videos: fact-check the draft and build the fact table, lock the script, then record voice, SRT, music and visuals in that fixed order on a single timeline, with a numeric QA gate before delivery. |
+| [srt-unverified-marker-gate](skills/content-and-media/srt-unverified-marker-gate/SKILL.md) | Gate a delivered video's SRT subtitle file before QA handover or posting: scan the full text for unverified-claim markers, resolve each one against a real source, and block delivery while any marker remains. |
+| [pre-edit-workflow-g0-g7](skills/content-and-media/pre-edit-workflow-g0-g7/SKILL.md) | Run a gated pre-edit workflow (gates G0–G7) for narrated videos: fact-check the draft and build the fact table, lock the script, then record voice, SRT, music and visuals in that fixed order on a single timeline, with a numeric QA gate before delivery. |
+
+### Coding & development
+
+Defined category (`skills/coding-and-development/`) — no skills yet; the first entries arrive per the [integration roadmap](docs/INTEGRATION_MAP.md).
+
+### Data & research
+
+Defined category (`skills/data-and-research/`) — no skills yet; the first entries arrive per the [integration roadmap](docs/INTEGRATION_MAP.md).
+
+### Productivity
+
+Defined category (`skills/productivity/`) — no skills yet; the first entries arrive per the [integration roadmap](docs/INTEGRATION_MAP.md).
 
 More skills are on the way. Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Categories
 
-Skills and linked projects are organised by category in [docs/CATEGORIES.md](docs/CATEGORIES.md):
-
-- Getting started & templates
-- Productivity & office work
-- Content & media
-- Coding & development
-- Game development
-- Data & research
-- Business & marketing
-- Connectors & integrations
+Skills in this repo are filed under four domain categories — **Content & media · Coding & development · Data & research · Productivity** — defined with their folder slugs in [docs/CATEGORIES.md](docs/CATEGORIES.md), which is also where community projects are curated by topic.
 
 ## Community projects
 

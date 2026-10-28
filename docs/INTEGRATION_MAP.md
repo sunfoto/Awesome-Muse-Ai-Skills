@@ -6,7 +6,7 @@ Star counts in the upstream README are the upstream repos' self-reported numbers
 
 ## Mapping to this repo's categories
 
-### Content & media (10)
+### Content & media (10) — target folder: `skills/content-and-media/`
 
 | Upstream entry | Upstream source | Wave |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ Star counts in the upstream README are the upstream repos' self-reported numbers
 | humanizer | blader/humanizer | 4 |
 | outward_identity_discipline | local — no public repo | **Excluded** (see below) |
 
-### Coding & development (16)
+### Coding & development (16) — target folder: `skills/coding-and-development/`
 
 | Upstream entry | Upstream source | Wave |
 | --- | --- | --- |
@@ -43,13 +43,13 @@ Star counts in the upstream README are the upstream repos' self-reported numbers
 | graphify | Graphify-Labs/graphify | 4 |
 | paperclip | paperclipai/paperclip | 4 (multi-agent orchestration) |
 
-### Data & research (1)
+### Data & research (1) — target folder: `skills/data-and-research/`
 
 | Upstream entry | Upstream source | Wave |
 | --- | --- | --- |
 | agent-reach | Panniantong/Agent-Reach | 4 |
 
-### Productivity & office work (2)
+### Productivity & office work (2) — target folder: `skills/productivity/`
 
 | Upstream entry | Upstream source | Wave |
 | --- | --- | --- |
@@ -70,4 +70,4 @@ Star counts in the upstream README are the upstream repos' self-reported numbers
 
 ## Roles
 
-Misa drafts and critiques; Muse standardises against the v2 template, test-loads each skill into Muse to verify it triggers and reads correctly, and pushes to this repo. Folder layout: `skills/<skill-name>/`, one primary category per skill.
+Misa drafts and critiques; Muse standardises against the v2 template, test-loads each skill into Muse to verify it triggers and reads correctly, and pushes to this repo. Folder layout: `skills/<category-slug>/<skill-name>/` — each entry lands in the folder of the category section it is listed under (registry: [CATEGORIES.md](CATEGORIES.md)), one primary category per skill.

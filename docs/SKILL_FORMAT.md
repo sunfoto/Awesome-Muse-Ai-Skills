@@ -48,3 +48,13 @@ Copy the skill folder into your Muse custom skills directory (`~/workspace/custo
 ## Architecture decision — one skill per folder (2026-10-28)
 
 Skills are **never bundled into one mega-skill**. Each skill is its own folder with its own `SKILL.md`, because Muse matches a user request against each skill's short name and description: a bundle dilutes matching, bloats context with unrelated procedures, and makes per-skill review, testing, and selective install impossible. Tightly-coupled steps of one workflow travel as a pack of separate skills (or one skill plus `references/`), never as one giant `SKILL.md`.
+
+## Architecture update — domain folders (2026-10-28)
+
+Skills are also grouped **by domain**. The full path of a skill in this repo is:
+
+```text
+skills/<category-slug>/<skill-name>/SKILL.md
+```
+
+`<category-slug>` is one of the domain folders defined in the registry in [CATEGORIES.md](CATEGORIES.md): `content-and-media`, `coding-and-development`, `data-and-research`, `productivity`. **Choosing the correct category from that registry is a required step before writing a new skill**: pick the domain first, then create the skill folder inside it. The one-skill-per-folder rule above is unchanged — a domain folder is a grouping level, never a bundle, and a skill that fits no existing category needs a new owner-approved category rather than a force-fit (see the classification rule in [CATEGORIES.md](CATEGORIES.md)). The only exception at the top level of `skills/` is `example-hello-muse`, the unclassified format example.
