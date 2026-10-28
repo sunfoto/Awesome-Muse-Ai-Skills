@@ -23,6 +23,7 @@ See [docs/SKILL_FORMAT.md](docs/SKILL_FORMAT.md) for the format, and [templates/
 | Skill | What it does |
 | --- | --- |
 | [example-hello-muse](skills/example-hello-muse/SKILL.md) | Minimal working example — use it to verify your install and as a pattern for your own skill. |
+| [srt-unverified-marker-gate](skills/srt-unverified-marker-gate/SKILL.md) | Gate a delivered video's SRT subtitle file before QA handover or posting: scan the full text for unverified-claim markers, resolve each one against a real source, and block delivery while any marker remains. |
 
 More skills are on the way. Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 

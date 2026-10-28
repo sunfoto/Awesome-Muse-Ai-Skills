@@ -17,7 +17,7 @@ _No entries yet — contributions welcome._
 
 Writing, social posts, images, audio, video scripting and production.
 
-_No entries yet — contributions welcome._
+- [srt-unverified-marker-gate](../skills/srt-unverified-marker-gate/SKILL.md) — pre-delivery gate for SRT subtitle files: full-text scan for unverified-claim markers, per-marker resolution against real sources, zero markers remaining before QA handover or posting.
 
 ## Coding & development
 
