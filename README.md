@@ -24,6 +24,7 @@ See [docs/SKILL_FORMAT.md](docs/SKILL_FORMAT.md) for the format, and [templates/
 | --- | --- |
 | [example-hello-muse](skills/example-hello-muse/SKILL.md) | Minimal working example — use it to verify your install and as a pattern for your own skill. |
 | [srt-unverified-marker-gate](skills/srt-unverified-marker-gate/SKILL.md) | Gate a delivered video's SRT subtitle file before QA handover or posting: scan the full text for unverified-claim markers, resolve each one against a real source, and block delivery while any marker remains. |
+| [pre-edit-workflow-g0-g7](skills/pre-edit-workflow-g0-g7/SKILL.md) | Run a gated pre-edit workflow (gates G0–G7) for narrated videos: fact-check the draft and build the fact table, lock the script, then record voice, SRT, music and visuals in that fixed order on a single timeline, with a numeric QA gate before delivery. |
 
 More skills are on the way. Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 

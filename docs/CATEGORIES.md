@@ -18,6 +18,7 @@ _No entries yet — contributions welcome._
 Writing, social posts, images, audio, video scripting and production.
 
 - [srt-unverified-marker-gate](../skills/srt-unverified-marker-gate/SKILL.md) — pre-delivery gate for SRT subtitle files: full-text scan for unverified-claim markers, per-marker resolution against real sources, zero markers remaining before QA handover or posting.
+- [pre-edit-workflow-g0-g7](../skills/pre-edit-workflow-g0-g7/SKILL.md) — gated pre-edit workflow (gates G0–G7) for narrated videos: fact table first, script locked before voice, SRT as the single timeline for music and visuals, numeric QA gate before delivery.
 
 ## Coding & development
 

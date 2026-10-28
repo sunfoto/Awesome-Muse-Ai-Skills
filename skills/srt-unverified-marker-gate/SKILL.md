@@ -17,7 +17,7 @@ In production (a 109-cue documentary subtitle file), three markers survived all 
 
 - Use when: a video package (master + SRT) is delivered for QA, handover, or posting, and the subtitle file may contain editorial or unverified-claim markers.
 - Use when: a producer reports they "cleaned" a subtitle file and the cleanup needs independent confirmation before posting.
-- Do NOT use when: the task is fact-checking a script *before* voice/subtitle production — that belongs to the pre-edit fact-table step of the video production process (the G0–G7 pre-edit workflow; its skill draft is next in queue and has no skill name yet, so this draft names the destination as "G0–G7 pre-edit workflow, fact-table step" and the skill name will be filled in when that draft exists), not this gate.
+- Do NOT use when: the task is fact-checking a script *before* voice/subtitle production — that belongs to the fact-table step (step G0) of the `pre-edit-workflow-g0-g7` skill, not this gate.
 - Do NOT use when: the task is subtitle timing, formatting, translation, or styling with no verification flags involved — route it to the video production/editing skill handling the project.
 
 ## 4. Inputs required
@@ -52,7 +52,7 @@ The gate passes only when ALL of these measurable conditions hold:
 ## 7. Examples
 
 - **Correct example:** "Here is the finished video package, master + SRT, ready for QA before we post it privately." → Run the gate: scan finds 3 bracketed `[CHƯA KIỂM CHỨNG …]` markers in a 109-cue file; two claims verify against a wire report and national statistics (markers deleted, claims kept), one claim cannot be verified and is removed with its marker; re-scan shows 0 hits and the cue count is still 109; QA report records 3 found / 3 resolved / 0 remaining and the package proceeds.
-- **Boundary example:** "Please check the facts in this draft script before we record the voiceover." → Do NOT use this gate: there is no delivered SRT yet, and pre-production fact-checking belongs to the pre-edit workflow's fact-table step (destination named here as "G0–G7 pre-edit workflow, fact-table step" — no skill name exists yet; the name will be filled in when the G0–G7 draft is written, which is the next draft in queue). Route it there; this gate only applies to markers inside a delivered subtitle file.
+- **Boundary example:** "Please check the facts in this draft script before we record the voiceover." → Do NOT use this gate: there is no delivered SRT yet, and pre-production fact-checking belongs to the fact-table step (step G0) of the `pre-edit-workflow-g0-g7` skill. Route it there; this gate only applies to markers inside a delivered subtitle file.
 
 ## 8. Common failures & fixes
 
