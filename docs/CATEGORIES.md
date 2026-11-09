@@ -23,6 +23,9 @@ Folder: `skills/content-and-media/`
 
 - [srt-unverified-marker-gate](../skills/content-and-media/srt-unverified-marker-gate/SKILL.md) — pre-delivery gate for SRT subtitle files: full-text scan for unverified-claim markers, per-marker resolution against real sources, zero markers remaining before QA handover or posting.
 - [pre-edit-workflow-g0-g7](../skills/content-and-media/pre-edit-workflow-g0-g7/SKILL.md) — gated pre-edit workflow (gates G0–G7) for narrated videos: fact table first, script locked before voice, SRT as the single timeline for music and visuals, numeric QA gate before delivery.
+- [cartoon-3d-short-vn](../skills/content-and-media/cartoon-3d-short-vn/SKILL.md) — 55–70 s vertical cartoon 3D story shorts (Vietnamese adaptation of an MIT-licensed skill): 2D bean-head characters in a three.js world rendered with Remotion at 30 fps, 8-beat fact-first script, one locked voice, synthesized SFX and music.
+- [tiktok-short-video-production](../skills/content-and-media/tiktok-short-video-production/SKILL.md) — short TikTok film production: a short sample approved before the full build, subtitles kept inside the platform safe area, and posting verified in TikTok Studio before it is reported done.
+- [project-image-generation](../skills/content-and-media/project-image-generation/SKILL.md) — AI image asset production for games and projects: sample-first art direction, prompts built from a shared standard template, watermark cleanup and batch delivery.
 
 ### 2. Coding & development — `coding-and-development`
 
